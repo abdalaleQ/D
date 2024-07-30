@@ -1,1 +1,2 @@
-web: python3 app.py & python3 repthonsql.py
+web: python3 app.py
+bash: python3 repthonsql.py
