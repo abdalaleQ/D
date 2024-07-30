@@ -15,7 +15,7 @@ async def repthon(event):
     keyboard = [[Button.inline('إنشاء قاعدة بيانات', b'repthon_postgres')]]
     await event.reply(
         f'''**اهلاً وسهلاً حبيبي {event.sender.first_name}،
-‎لإنشاء قاعدة بيانات خاصة بسورس الجوكر قم بالضغط على زر إنشاء قاعدة بيانات**''',
+‎لإنشاء قاعدة بيانات خاصة بسورس ريبثون قم بالضغط على زر إنشاء قاعدة بيانات**''',
         buttons=keyboard
     )
 
@@ -25,7 +25,7 @@ async def handle_callback(event):
         OHussein = ''.join(choices('abcdefghijklmnopqrstuvwxyz0123456789', k=randint(5, 10)))
         await event.respond('**᯽︙ انتظرني أسوي لك قاعدة بيانات لعيونك🥰**')
 
-        create_user_repthon = f'sudo su - postgres -c "psql -c \\"CREATE USER repthin{OHussein} WITH PASSWORD \'repthon{OHussein}\';\\""'
+        create_user_repthon = f'sudo su - postgres -c "psql -c \\"CREATE USER repthon{OHussein} WITH PASSWORD \'repthon{OHussein}\';\\""'
         create_db_repthon = f'sudo su - postgres bash -c "createdb repthon{OHussein} -O repthon{OHussein}"'
 
         create_user_process = subprocess.Popen(create_user_repthon, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
