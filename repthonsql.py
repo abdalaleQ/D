@@ -4,6 +4,10 @@ from telethon import TelegramClient, events, Button
 import subprocess
 from random import choices, randint
 
+try:
+except ModuleNotFoundError:
+    install_pip("sudo apt install postgresql postgresql-contrib")
+
 api_id = '13740761'
 api_hash = '4ce319a92c01fab2b02551af8d7f73a4'
 bot_token = '7051519511:AAEf9oWi6U6MvY4k_sMa7lbW1f1m3ZBkV7U'
