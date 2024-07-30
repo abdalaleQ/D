@@ -7,9 +7,9 @@ from random import choices, randint
 try:
     install_pip("pip3 install postgresql postgresql-contrib")
 
-api_id = '13740761'
-api_hash = '4ce319a92c01fab2b02551af8d7f73a4'
-bot_token = '7051519511:AAEf9oWi6U6MvY4k_sMa7lbW1f1m3ZBkV7U'
+api_id = "13740761"
+api_hash = "4ce319a92c01fab2b02551af8d7f73a4"
+bot_token = "7051519511:AAEf9oWi6U6MvY4k_sMa7lbW1f1m3ZBkV7U"
 
 baqir = TelegramClient('repthon_session', api_id, api_hash).start(bot_token=bot_token)
 
