@@ -5,9 +5,7 @@ import subprocess
 from random import choices, randint
 
 try:
-    from postgresql import *
-except ModuleNotFoundError:
-    install_pip("sudo apt install postgresql postgresql-contrib")
+    install_pip("pip3 install postgresql postgresql-contrib")
 
 api_id = '13740761'
 api_hash = '4ce319a92c01fab2b02551af8d7f73a4'
