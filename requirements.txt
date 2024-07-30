@@ -1,0 +1,6 @@
+telethon==1.36.0
+telethon-session-sqlalchemy
+randomstuff.py
+flask
+flask_restful
+requests
