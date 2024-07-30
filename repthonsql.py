@@ -5,6 +5,7 @@ import subprocess
 from random import choices, randint
 
 try:
+    from postgresql import *
 except ModuleNotFoundError:
     install_pip("sudo apt install postgresql postgresql-contrib")
 
