@@ -7,9 +7,9 @@ try:
 except subprocess.CalledProcessError as e:
     print(f"Error occurred: {e}")
 
-api_id = "13740761"
-api_hash = "4ce319a92c01fab2b02551af8d7f73a4"
-bot_token = "7051519511:AAEf9oWi6U6MvY4k_sMa7lbW1f1m3ZBkV7U"
+api_id = "16240771"
+api_hash = "e8717d3a9601531928f27590fb41c44d"
+bot_token = "7307416391:AAGkc3YzRcJ3GqeR2VewbosT4QFoWiTy8Lk"
 
 baqir = TelegramClient('repthon_session', api_id, api_hash).start(bot_token=bot_token)
 
